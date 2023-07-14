@@ -1,0 +1,58 @@
+<%- include('partials/header') %>
+
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <a href="/login" class="signin" id="inacitve"> Sign In </a>
+    <a  href="/register"  class="signin" id="active" >Sign up</a>`
+
+    <!-- Icon -->
+    
+
+    <!-- Login Form -->
+    <form action="/register" method="post">
+      <input type="text" id="login" class="fadeIn second" name="name" placeholder="name" required>
+      
+      <input type="text" id="login" class="fadeIn second" name="username" placeholder="username" required>
+
+      
+      
+      <% if (data==1) { %>
+        <span class="danger">username is already taken</span>
+      <% } %>
+      <% if (data==4) { %>
+        <span class="danger">    invalid email</span>
+
+      <% } %>
+        <input type="password" id="password" class="fadeIn third" name="password" placeholder="password eg:uganda@1" required>
+      <% if (data==3) { %>
+        <span class="danger"> passwords is too weak</span>
+     
+
+        <% } %>
+      <input type="password" id="password" class="fadeIn third" name="confirm" placeholder=" confirm password" required>
+      <% if (data==2) { %>
+        <span class="danger"> passwords are not equal</span>
+      <% } %>
+      <input type="submit" class="fadeIn fourth" >
+    </form>
+
+    <!-- Remind Passowrd -->
+   
+  </div>
+</div>
+<%- include('partials/footer') %>
+
+<!-- <div class="container toptext">
+  <h1>Welcome</h1>
+  <h2>Geeks for Geeks</h2>
+ 
+
+</div>
+
+
+<div class="center">
+<a class="btn btn-light btn-lg" href="/register" role="button">Register</a>
+<a class="btn btn-dark btn-lg" href="/login" role="button">Login</a>
+</div> -->

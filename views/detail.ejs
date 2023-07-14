@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+<div class="container">
+  <div>
+    <h1>update your details</h1>
+  </div>
+  <form action="/after" method="POST">
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">instagram link</label>
+    <input type="email" name="insta"class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">about</label>
+    <textarea class="form-control" name="about" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <button type="submit">hello</button>
+</form>
+</div>
+<%- include('partials/footer') %>
